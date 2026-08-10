@@ -1,27 +1,36 @@
 name: Documentation
-description: Report missing, unclear, or incorrect documentation
+description: Request new documentation or report missing, unclear, or incorrect docs
 title: "[Docs] "
 labels: ["documentation"]
 body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - New documentation
+        - Fix existing documentation
+    validations:
+      required: true
   - type: input
     id: location
     attributes:
       label: Location
-      description: Which page/file/section is affected? (link or path)
+      description: For existing docs, which page/file/section is affected? For new docs, where should it live?
     validations:
-      required: true
+      required: false
   - type: textarea
     id: issue
     attributes:
-      label: Issue
-      description: What's wrong, missing, or unclear?
+      label: Description
+      description: For new docs, what needs to be documented? For existing docs, what's wrong, missing, or unclear?
     validations:
       required: true
   - type: textarea
     id: suggestion
     attributes:
-      label: Suggested Improvement
-      description: How should it be fixed or improved?
+      label: Suggested Content / Improvement
+      description: Outline what the doc should cover, or how it should be fixed/improved.
     validations:
       required: false
   - type: textarea
