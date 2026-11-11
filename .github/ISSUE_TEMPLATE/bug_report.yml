@@ -34,6 +34,23 @@ body:
       description: What actually happened.
     validations:
       required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How a reviewer can tell the bug is fixed.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: traceability
+    attributes:
+      label: Traceability
+      description: The requirement the broken behaviour belongs to, if any.
+      placeholder: Maps to FR-9 (SRS §4.1 Search & Browse)
+    validations:
+      required: false
   - type: input
     id: os
     attributes:

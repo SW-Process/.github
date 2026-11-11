@@ -9,6 +9,12 @@
 
 ---
 
+### 🔗 Related Issue
+
+Closes #
+
+---
+
 ### 🧩 Description
 
 -
@@ -30,5 +36,7 @@
 ### 🧾 Checklist
 - [ ] Code runs without errors
 - [ ] Tested locally
-- [ ] Updated related documentation (if needed)
+- [ ] CI passes (typecheck, tests, build, `npm audit`)
+- [ ] Every acceptance criterion in the linked issue is met
+- [ ] Updated related documentation (if needed): API reference, ER diagram, `.env.example`
 - [ ] Review requested from teammates
